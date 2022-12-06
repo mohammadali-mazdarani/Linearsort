@@ -29,6 +29,9 @@ int n;
 //Get number index of array 
 n = getindexnu();
 
+//Seperator
+cout<<endl<<endl<<"----------------------------------"<<endl<<endl
+
 //Declar array
 int a[n];
 
