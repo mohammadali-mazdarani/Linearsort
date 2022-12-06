@@ -13,6 +13,7 @@ using namespace std;
 
 int getindexnu();
 
+void getarraynu(int b[],int &c);
 
 //--------------------------
 //micro
@@ -28,6 +29,11 @@ int n;
 //Get number index of array 
 n = getindexnu();
 
+//Declar array
+int a[n];
+
+//Get number of array
+getarraynu(a , n); 
 getch();
 }
 //function variable
@@ -42,4 +48,19 @@ int getindexnu()
     cin>>a;
 
     return a;
+}
+
+//Function for get number of array
+void getarraynu(int b[],int &c)
+{
+
+    for(int i=0; i<c; ++i)
+    {
+
+     cout<<"["<<i<<"] = ";
+
+     cin>>b[i];
+
+    }
+
 }
