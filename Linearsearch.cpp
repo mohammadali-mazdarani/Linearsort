@@ -15,6 +15,8 @@ int getindexnu();
 
 void getarraynu(int b[],int &c);
 
+int getnu();
+
 //--------------------------
 //micro
 //---------------------
@@ -30,13 +32,22 @@ int n;
 n = getindexnu();
 
 //Seperator
-cout<<endl<<endl<<"----------------------------------"<<endl<<endl
+cout<<endl<<endl<<"----------------------------------"<<endl<<endl;
 
 //Declar array
 int a[n];
 
 //Get number of array
 getarraynu(a , n); 
+
+//Seperator
+cout<<endl<<endl<<"----------------------------------"<<endl<<endl;
+
+//Declare variable for get a number to find in array
+int m;
+
+m = getnu();
+
 getch();
 }
 //function variable
@@ -67,3 +78,15 @@ void getarraynu(int b[],int &c)
     }
 
 }
+
+//Function for get number to find in array
+int getnu()
+{
+    int c;
+    cout<<"Enter number of array = ";
+    cin>>c;
+
+    return c;
+}
+
+
