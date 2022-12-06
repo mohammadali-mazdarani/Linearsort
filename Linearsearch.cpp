@@ -30,7 +30,7 @@ int n;
 n = getindexnu();
 
 //Seperator
-cout<<endl<<endl<<"----------------------------------"<<endl<<endl
+cout<<endl<<endl<<"----------------------------------"<<endl<<endl;
 
 //Declar array
 int a[n];
