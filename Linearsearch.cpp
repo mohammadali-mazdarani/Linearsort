@@ -13,6 +13,11 @@ using namespace std;
 
 int getindexnu();
 
+void getarraynu(int b[],int &c);
+
+int getnu();
+
+void findnu(int d[],int a,int c);
 
 //--------------------------
 //micro
@@ -23,6 +28,8 @@ int main(int argc, char** argv)
 {
 
 
+//Get number index of array 
+n = getindexnu();
 
 getch();
 }
@@ -31,3 +38,5 @@ getch();
 //Functions
 
 
+    return a;
+}
