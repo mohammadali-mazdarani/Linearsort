@@ -105,13 +105,22 @@ int getnu()
 
 void findnu(int d[],int a,int c)
 {
+    int counter=0;
+
     for(int i=0; i<a; ++i)
     {
         if (d[i] == c)
         {
             cout<<"["<<i<<"] = "<<d[i]<<endl;
         }
+        else
+        {
+            ++counter;
+        }
     }
+
+    if (counter == a)
+    cout<<c<<" not found";
 }
 
 
