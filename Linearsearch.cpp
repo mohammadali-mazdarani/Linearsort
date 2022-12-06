@@ -17,6 +17,8 @@ void getarraynu(int b[],int &c);
 
 int getnu();
 
+void findnu(int d[],int a,int c);
+
 //--------------------------
 //micro
 //---------------------
@@ -47,6 +49,14 @@ cout<<endl<<endl<<"----------------------------------"<<endl<<endl;
 int m;
 
 m = getnu();
+
+//Seperator
+cout<<endl<<endl<<"----------------------------------"<<endl<<endl;
+
+
+//find number
+findnu(a,n,m);
+
 
 getch();
 }
@@ -87,6 +97,21 @@ int getnu()
     cin>>c;
 
     return c;
+}
+
+//Function for find number in array
+//a number of index array 
+//c number for find on array
+
+void findnu(int d[],int a,int c)
+{
+    for(int i=0; i<a; ++i)
+    {
+        if (d[i] == c)
+        {
+            cout<<"["<<i<<"] = "<<d[i]<<endl;
+        }
+    }
 }
 
 
