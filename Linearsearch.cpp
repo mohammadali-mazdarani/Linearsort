@@ -10,6 +10,10 @@ using namespace std;
 *
 */
 //prototype
+
+int getindexnu();
+
+
 //--------------------------
 //micro
 //---------------------
@@ -18,8 +22,24 @@ using namespace std;
 int main(int argc, char** argv)
 {
 
+//Declare number of index of array
+int n;
+
+//Get number index of array 
+n = getindexnu();
+
 getch();
 }
 //function variable
 //--------------------------
-//functions
+//Functions
+
+//Function for get number index of array
+int getindexnu()
+{
+    int a;
+    cout<<"Enter number of array = ";
+    cin>>a;
+
+    return a;
+}
